@@ -1,10 +1,10 @@
 <header class="header">
     <div class="header_content d-flex flex-row align-items-center justify-content-center">
-        <div class="logo"><a href="#">Mixtape</a></div>
+        <div class="logo"><a href="/">Mixtape</a></div>
         <div class="log_reg">
             <ul class="d-flex flex-row align-items-start justify-content-start">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="{{route('login.form')}}">Login</a></li>
+                <li><a href="{{route('register.form')}}">Register</a></li>
             </ul>
         </div>
         <nav class="main_nav">
