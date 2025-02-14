@@ -1,146 +1,39 @@
 <div class="shows">
     <div class="container">
         <div class="row shows_row">
-            Top song
-            <!-- Shows List -->
-            <div class="col-lg-8 order-lg-1 order-2 shows_list_col">
-                <div class="shows_list_container">
-                    <ul class="shows_list">
+            <div class="container mx-auto p-4">
+                <!-- Thanh tìm kiếm -->
+                <div class="flex justify-center my-6 text-center mb-3 mt-3">
+                    <input type="text" class="w-2/3 p-2 border rounded-l-lg" placeholder="Tìm kiếm nghệ sĩ, bài hát...">
+                    <button class=" text-white px-4 py-2 rounded-r-lg">Tìm kiếm</button>
+                </div>
 
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start mt-4">
-                            <div><div class="show_date">18/07</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Electric Castle Festival</a></div>
-                                <div class="show_location">Cluj, Romania</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">20/07</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Ultra Music Festival</a></div>
-                                <div class="show_location">Miami, USA</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">03/08</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Untold Festival</a></div>
-                                <div class="show_location">Cluj, Romania</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">11/08</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Sun Kissed Festival</a></div>
-                                <div class="show_location">Paris, France</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">18/08</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Spanish Festival</a></div>
-                                <div class="show_location">Madrid, Spain</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">25/08</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Vikings Festival</a></div>
-                                <div class="show_location">Oslo, Norway</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                    </ul>
+                <!-- Danh sách bài hát -->
+                <h2 class="text-xl font-semibold mb-4 text-center">Nghe những gì đang thịnh hành miễn phí</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <div class=" p-3 shadow rounded-lg">
+                        <img src="{{asset('client/images/blog_1.jpg')}}" class="w-full rounded-lg" alt="Bài hát" width="200px" height="100px">
+                        <p class="mt-2 text-sm font-semibold">Tên bài hát: abc</p>
+                        <p class="text-xs text-gray-500">Nghệ sĩ</p>
+                    </div>
+                    <div class=" p-3 shadow rounded-lg">
+                        <img src="{{asset('client/images/blog_1.jpg')}}" class="w-full rounded-lg" alt="Bài hát" width="200px" height="100px">
+                        <p class="mt-2 text-sm font-semibold">Tên bài hát</p>
+                        <p class="text-xs text-gray-500">Nghệ sĩ</p>
+                    </div>
+                    <div class=" p-3 shadow rounded-lg">
+                        <img src="{{asset('client/images/blog_1.jpg')}}" class="w-full rounded-lg" alt="Bài hát" width="200px" height="100px">
+                        <p class="mt-2 text-sm font-semibold">Tên bài hát</p>
+                        <p class="text-xs text-gray-500">Nghệ sĩ</p>
+                    </div>
+                    <div class=" p-3 shadow rounded-lg">
+                        <img src="{{asset('client/images/blog_1.jpg')}}" class="w-full rounded-lg" alt="Bài hát" width="200px" height="100px">
+                        <p class="mt-2 text-sm font-semibold">Tên bài hát</p>
+                        <p class="text-xs text-gray-500">Nghệ sĩ</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row shows_row">
-            Top song
-            <!-- Shows List -->
-            <div class="col-lg-8 order-lg-1 order-2 shows_list_col">
-                <div class="shows_list_container">
-                    <ul class="shows_list">
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start mt-4">
-                            <div><div class="show_date">18/07</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Electric Castle Festival</a></div>
-                                <div class="show_location">Cluj, Romania</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">20/07</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Ultra Music Festival</a></div>
-                                <div class="show_location">Miami, USA</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">03/08</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Untold Festival</a></div>
-                                <div class="show_location">Cluj, Romania</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">11/08</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Sun Kissed Festival</a></div>
-                                <div class="show_location">Paris, France</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">18/08</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Spanish Festival</a></div>
-                                <div class="show_location">Madrid, Spain</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                        <!-- Show -->
-                        <li class="d-flex flex-row align-items-center justify-content-start">
-                            <div><div class="show_date">25/08</div></div>
-                            <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                <div class="show_name"><a href="#">Vikings Festival</a></div>
-                                <div class="show_location">Oslo, Norway</div>
-                            </div>
-                            <div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
+            </body>
         </div>
     </div>
 </div>

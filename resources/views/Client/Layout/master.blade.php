@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="client/plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="client/styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="client/styles/responsive.css">
+
 </head>
 
 <body>
@@ -29,8 +30,8 @@
           <!-- content -->
           @include('client.layout.content')
 
-        <!-- comming Shows -->
-        @include('client.layout.commingshow')
+        <!-- new -->
+        @include('client.layout.new')
 
         <!-- Footer -->
         @include('client.layout.footer')
