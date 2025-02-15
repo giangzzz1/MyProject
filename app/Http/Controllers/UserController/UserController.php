@@ -5,7 +5,10 @@ namespace App\Http\Controllers\UserController;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AccountController extends Controller
+class UserController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('User.home.dashboard');
+    }
 }
