@@ -16,14 +16,14 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('email')->unique();
             $table->tinyInteger('role')->default(0);
-            $table->string('provider')->nullable();
-            $table->string('provider_id')->nullable();
-            $table->string('avatar')->nullable();
+            $table->string('provider')->nullable(); // Facebook/Google
+            $table->string('provider_id')->nullable(); // ID từ Facebook/Google
+            $table->string('avatar')->nullable(); // Avatar người dùng
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable(); // Nullable vì người dùng có thể không cần mật khẩu
             $table->rememberToken();
             $table->timestamps();
-        });
+        });        
     }
 
     /**

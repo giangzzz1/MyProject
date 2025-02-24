@@ -6,6 +6,8 @@ use App\Http\Controllers\AccountController\AOuthController;
 use App\Http\Controllers\AdminController\AdminController;
 use App\Http\Controllers\UserController\UserController;
 
+use App\Http\Controllers\SpotifyController\SpotifyController;
+
 use App\Http\Controllers\ClientController\ClientController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/search', [SpotifyController::class, 'search'])->name('spotify.search');
 
 Route::get('/', function () {
     return view('Client.Layout.master');
